@@ -59,11 +59,11 @@ const send = function(ev) {
     document.getElementById('form-user').submit();
 }else{
     fails.forEach(obj => {
-        const field = docmument.getElementById()
+        const field = document.getElementById(obj.input);
         field.parentElement.classList.add('error');
-        field.parentELement.setAttribute('data-errormsg', obj.msg);
+        field.parentElement.setAttribute('data-errormsg', obj.msg);
     })
-}
+}}
 
 document.addEventListener('DOMContentLoaded', init);
 
